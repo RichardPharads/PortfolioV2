@@ -7,7 +7,7 @@
   --font-main-font: "Jost" , "sans-serif";
   --color-primary: #0F0F0F;
   --color-accent: #02FF9A;
-
+  --color-bg-dark-800: #141414;
 
     /* light Mode For Application */
 }
@@ -20,3 +20,11 @@ body{
     font-family: "Jost";
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none;
+}

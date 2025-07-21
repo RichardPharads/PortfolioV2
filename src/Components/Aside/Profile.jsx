@@ -3,10 +3,12 @@ import profile from '../../Assets/image.png'
 import verify from '../../Assets/verify.png'
 import github from '../../Assets/github 1.png'
 import twitter from '../../Assets/twitter.png'
+import facebook from '../../Assets/facebook.png'
+import instagram from '../../Assets/instagram.png'
 const lists = [
 
   {
-    header: "Awards & Certificates",
+    header: "Things Interested In",
     items: ["UI/UX", "Backend" , "Frontend" , "API", "Machine Learning" , "Training Model" , "Web Design" , "Fullstack"  ]
   },
    {
@@ -20,8 +22,9 @@ const lists = [
   
 function Profile() {
   return (
-    <div className='center border border-accent w-[320px] border-t-0 rounded-t-2xl bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100%'>
-      <div className=' flex flex-col gap-8 p-6 pt-8'>
+    
+    <div className={`center border border-accent w-[380px] border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
+      <div className=' flex flex-col gap-8 p-6 pt-16'>
         <div className=' h-fit flex flex-col items-center text-center gap-6'>
           <div className='profile w-[100px] h-[100px] rounded-full '>
             <img className='w-full h-full' src={profile} alt="" />
@@ -56,11 +59,11 @@ function Profile() {
         {
           lists.map(({header , items})=>(
             <div className='grid gap-2'>
-            <h2>{header}</h2>
+            <h2 className='text-[20px] font-bold'>{header}</h2>
             <div className='w-full text-wrap'>
             { 
               items.map(item => (
-                <span className="text-base">{item}</span>
+                <ul className="text-sm inline text-white/80 hover:text-white cursor-crosshair">{item} | </ul>
               ))
             }
            </div>
@@ -68,12 +71,12 @@ function Profile() {
           ))
         }
 
-        <div className='gap-2 border flex'>
-          <div className='w-6 h-6 bg-red-400 border'>
-            <img className='w-full h-full' src="" alt="" />
+        <div className='gap-2  flex'>
+          <div className='w-6 h-6 cursor-pointer '>
+            <img className='w-full h-full' src={facebook} alt="" />
           </div>
-          <div className='w-6 h-6 bg-red-400 border'>
-            <img className='w-full h-full' src="" alt="" />
+          <div className='w-6 h-6 cursor-pointer'>
+            <img className='w-full h-full' src={instagram} alt="" />
           </div>
         </div>
       </div>

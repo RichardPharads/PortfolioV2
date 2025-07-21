@@ -6,11 +6,12 @@ import Contents from './Components/Aside/Contents'
 
 function App() {
   return (
-    <div className='flex h-dvh px-5 m-auto'>
+    <div className='flex h-dvh m-auto px-18'>
   <Profile />
-  <div className='flex flex-col w-full h-full'>
-    <Navbar className='h-16' />
+  <div className='flex flex-col w-full h-full p-4  py-4'>
+    <Navbar  />
     <div className='flex flex-1'>
+      
       <Main/>
       <Contents/>
     </div>
