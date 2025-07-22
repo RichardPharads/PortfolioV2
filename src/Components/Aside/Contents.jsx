@@ -1,5 +1,5 @@
 import React, { createRef, useRef } from 'react'
-import { listContents } from '../../data/MainContents'
+import { listContents } from '../../data/mainContents'
 import { useSection } from '../../App'
 import ContentButton from './ContentButton'
 function Contents() {

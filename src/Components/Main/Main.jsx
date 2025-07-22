@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion , useScroll} from 'motion/react'
-import {listContents} from '../../data/MainContents.js'
+import {listContents} from '../../data/mainContents.js'
 import { useSection } from '../../App.jsx'
 
 

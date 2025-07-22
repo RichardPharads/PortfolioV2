@@ -3,7 +3,7 @@ import Profile from './Components/Aside/Profile'
 import Navbar from './Components/NavBar/Navbar'
 import Main from './Components/Main/Main'
 import Contents from './Components/Aside/Contents'
-import { listContents } from './data/MainContents.js'
+import { listContents } from './data/mainContents.js'
 
 const SectionContext = createContext()
 
