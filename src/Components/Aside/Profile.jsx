@@ -7,11 +7,12 @@ import facebook from '../../Assets/facebook.png'
 import instagram from '../../Assets/instagram.png'
 const lists = [
 
-  {
+  { id: 1,
     header: "Things Interested In",
     items: ["UI/UX", "Backend" , "Frontend" , "API", "Machine Learning" , "Training Model" , "Web Design" , "Fullstack"  ]
   },
    {
+    id: 2,
     header: "Awards & Certificates",
     items: ["UI/UX", "Backend" , "Frontend" , "API", "Machine Learning" , "Training Model" , "Web Design" , "Fullstack"  ]
   },
@@ -57,13 +58,14 @@ function Profile() {
         </div>
      
         {
-          lists.map(({header , items})=>(
-            <div className='grid gap-2'>
+          lists.map(({header , items , id})=>(
+            <div key={id} className='grid gap-2'>
             <h2 className='text-[20px] font-bold'>{header}</h2>
             <div className='w-full text-wrap'>
+      
             { 
-              items.map(item => (
-                <ul className="text-sm inline text-white/80 hover:text-white cursor-crosshair">{item} | </ul>
+              items.map((item , index) => (
+                <ul key={index} className="text-sm inline text-white/80 hover:text-white cursor-crosshair">{item} | </ul>
               ))
             }
            </div>
