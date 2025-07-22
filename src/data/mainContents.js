@@ -20,9 +20,7 @@ export const listContents = [
       title: "this is About page",
       contents: "Introduction About Richard",
       button: "You clicked richard",
-
-
-  }
+    }
   ,
    { id: 4,
       name: "richard",

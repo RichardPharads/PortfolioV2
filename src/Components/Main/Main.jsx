@@ -1,9 +1,7 @@
 import React from 'react'
-import image from '../../Assets/verify.png'
 import {motion , useScroll} from 'motion/react'
 import {listContents} from '../../data/MainContents.js'
 import { useSection } from '../../App.jsx'
-import Component1 from '../Component1.jsx'
 
 
 
@@ -20,7 +18,6 @@ function Main() {
               return (
                 <div key={items.id} ref={sectionRef.current[(items.id)]} className="h-lvh w-full border-accent border grid place-items-center z-0">{items.id}
                 
-                  {/* <button className='border py-2 px-5 rounded-md' type='button' onClick={() => alert(items.button)}></button> */}
                 </div>
               )
             })
