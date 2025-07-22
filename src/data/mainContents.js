@@ -50,6 +50,15 @@ export const listContents = [
       contents: "Introduction About Richard",
       button: "You clicked richard",
   }
+  ,
+   { id: 7,
+      name: "richard",
+      lastname: "parado",
+      title: "this is About page",
+      contents: "Introduction About Richard",
+      button: "You clicked richard",
+  }
+  
   
   
 ]
