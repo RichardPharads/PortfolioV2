@@ -1,17 +1,30 @@
-import React from 'react'
-import { listContents } from '../../data/mainContents'
+import React, { createRef, useRef } from 'react'
+import { listContents } from '../../data/MainContents'
+import { useSection } from '../../App'
+import ContentButton from './ContentButton'
 function Contents() {
-  return (
-    <div className='w-[200px] z-50 h-full  py-4 '>
-      <div className=' h-full rounded-lg pt-15 p-4 font-bold'>
-        <h2>On this page</h2>
+  const {sectionRef} = useSection()
 
-        <ul className='mt-2 cursor-pointer text-sm font-light text-gray-500'>
+      const scrollBtn = (contentId) => {
+      sectionRef.current[contentId]?.current?.scrollIntoView({
+                behavior: "smooth"
+      })
+    }
+  return (
+
+
+
+    <div className='w-[200px] z-50 border h-[600px] overflow-y-auto'>
+      <div className=' h-full rounded-lg pt-15 p-4 font-bold '>
+        <h2>On this Page</h2>
+
+        <ul className='mt-2 cursor-pointer text-sm font-light text-gray-500 p-2 '>
           {
             listContents.map((content , index) => (
-              <button key={index} className='text-left hover:border-l-1 ease-in-out duration-500 border-accent hover:p-4 p-2 hover:text-accent'>{content[0].contents}</button>
+
+              <ContentButton key={content.id} scrollBtn={() => scrollBtn(content.id)} content={content.contents} />
             ))
-          }
+          } 
         </ul>
       </div>
     </div>
