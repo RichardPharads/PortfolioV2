@@ -1,12 +1,11 @@
 import React from 'react'
 import {motion , useScroll} from 'motion/react'
-import {listContents} from '../../data/mainContents.js'
-import { useSection } from '../../App.jsx'
+import { useSection } from "../../Context/SectionContext.jsx"
 
 
 
 function Main() {
-  const {sectionRef} = useSection()
+  const {sectionRef , listContents} = useSection()
   return (
     <div className='flex-1 z-0  scroll-auto'>
   

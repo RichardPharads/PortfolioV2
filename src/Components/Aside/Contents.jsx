@@ -1,9 +1,8 @@
 import React, { createRef, useRef } from 'react'
-import { listContents } from '../../data/mainContents'
-import { useSection } from '../../App'
+import { useSection } from '../../Context/SectionContext'
 import ContentButton from './ContentButton'
 function Contents() {
-  const {sectionRef} = useSection()
+  const {sectionRef , listContents} = useSection()
 
       const scrollBtn = (contentId) => {
       sectionRef.current[contentId]?.current?.scrollIntoView({
@@ -14,11 +13,11 @@ function Contents() {
 
 
 
-    <div className='w-[200px] z-50 border h-[600px] overflow-y-auto'>
+    <div className='w-[200px] z-50  h-[600px] overflow-y-auto custom-scrollbar'>
       <div className=' h-full rounded-lg pt-15 p-4 font-bold '>
         <h2>On this Page</h2>
 
-        <ul className='mt-2 cursor-pointer text-sm font-light text-gray-500 p-2 '>
+        <ul className='mt-2 cursor-pointer text-sm font-light text-gray-500 p-2  border-l-2 border-white/10 grid gap-2'>
           {
             listContents.map((content , index) => (
 
