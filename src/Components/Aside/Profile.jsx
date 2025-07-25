@@ -24,7 +24,7 @@ const lists = [
 function Profile() {
   return (
     
-    <div className={`center border border-accent w-[380px] border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
+    <div className={`center border-x h-full border-gray-600 w-[380px] border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
       <div className=' flex flex-col gap-8 p-6 pt-16'>
         <div className=' h-fit flex flex-col items-center text-center gap-6'>
           <div className='profile w-[100px] h-[100px] rounded-full '>
@@ -60,7 +60,7 @@ function Profile() {
         {
           lists.map(({header , items , id})=>(
             <div key={id} className='grid gap-2'>
-            <h2 className='text-[20px] font-bold'>{header}</h2>
+            <h2 className='text-[18px] font-bold'>{header}</h2>
             <div className='w-full text-wrap'>
       
             { 

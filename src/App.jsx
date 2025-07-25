@@ -9,15 +9,19 @@ function App() {
 
   return (
     <div className='flex h-lvh m-auto px-18'>
+      <Profile/>
+      <SectionProvider>
   <div className='flex flex-col w-full h-full p-4  py-4'>
     <Navbar  />
-    <div className='flex flex-1'>
-      <SectionProvider>
+    <div className='flex flex-1 overflow-y-hidden'>
+      
         <Main/>
+        
         <Contents/>
-      </SectionProvider>
+      
     </div>
   </div>
+  </SectionProvider>
 </div>
   )
 }

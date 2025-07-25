@@ -1,12 +1,28 @@
 import React from 'react'
-
+import { useSection } from '../../Context/SectionContext'
 const navLinks = [
-  "Home", "About", "Resume" , "Project" , "Achievement" , "Testimonials" , "Contact"
+  {
+    id: 0,
+    page: "home"
+  },{
+    id: 1,
+    page: "about"
+  },{
+    id:2,
+    page: "Projects"
+  },{
+    id:3,
+    page: "Portfolio"
+  },{
+    id:4,
+    page: "Contact"
+  }
 ]
 
 
 
 function Navbar() {
+  const {dispatch} = useSection()
   return (
     <div className='h-30  relative flex items-center'>
       <div className='blur-3xl z-40 bg-black w-full h-full absolute'></div>
@@ -15,8 +31,8 @@ function Navbar() {
         <div className=' flex-1'>
           <ul className='flex gap-4'>
           {
-            navLinks.map((item , index) => (
-              <li key={index}>{item}</li>
+            navLinks.map(({id , page}) => (
+              <li onClick={() => dispatch({type:`${page}`})}  key={id}>{page}</li>
             ))
           }
           </ul>
