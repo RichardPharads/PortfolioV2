@@ -17,6 +17,10 @@ const navLinks = [
     id:4,
     page: "Contact"
   }
+  ,{
+    id:5,
+    page: "Nigga"
+  }
 ]
 
 
@@ -32,7 +36,7 @@ function Navbar() {
           <ul className='flex gap-4'>
           {
             navLinks.map(({id , page}) => (
-              <li onClick={() => dispatch({type:`${page}`})}  key={id}>{page}</li>
+              <button className='text-white hover:text-accent duration-300' onClick={() => dispatch({type:`${page}`})}  key={id}>{page}</button>
             ))
           }
           </ul>
