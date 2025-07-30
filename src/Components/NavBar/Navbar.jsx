@@ -3,10 +3,10 @@ import { useSection } from '../../Context/SectionContext'
 const navLinks = [
   {
     id: 0,
-    page: "home"
+    page: "Home"
   },{
     id: 1,
-    page: "about"
+    page: "About"
   },{
     id:2,
     page: "Projects"
@@ -36,7 +36,7 @@ function Navbar() {
           <ul className='flex gap-4'>
           {
             navLinks.map(({id , page}) => (
-              <button className='text-white hover:text-accent duration-300' onClick={() => dispatch({type:`${page}`})}  key={id}>{page}</button>
+              <button className='text-white hover:text-accent duration-300' onClick={() => dispatch({type:`${page.toLocaleLowerCase()}`})}  key={id}>{page}</button>
             ))
           }
           </ul>

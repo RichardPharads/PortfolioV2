@@ -31,15 +31,15 @@ body{
 
 /* Your global CSS or specific component stylesheet */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
+  background: gray;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #004214;
+  background-color: #131313;
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;

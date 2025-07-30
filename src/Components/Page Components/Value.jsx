@@ -9,11 +9,13 @@ function Value() {
           <img src="" alt="" />
         </div>
         <article className='max-w-[500px] flex flex-col justify-between gap-10'>
-          <p className='font-light text-2xl'>❝ Hello , My name is Richard , Aspiring Full-Stack Developer from the Philippines.
-I am interested for creating Modern Looking Application that is Scalable and Fast ❞</p>
+          <p className='font-light text-2xl text-white/50'>❝ Hello ,<span className='text-accent'> My name is Richard </span>, Aspiring Full-Stack Developer from the Philippines.
+I am interested for creating Modern and <span className='text-white hover:text-accent duration-500'>scalable Application</span> ❞</p>
           <button className='py-2 px-6 border rounded w-fit text-white/50 hover:text-white duration-700'>View my Project</button>
         </article>
+      
       </div>
+      <p className='w-[600px] pt-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus quas aliquid ad voluptatem impedit ea dicta sequi a? Facilis.</p>
     </div>
   )
 }

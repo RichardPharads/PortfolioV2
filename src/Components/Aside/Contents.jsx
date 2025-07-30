@@ -17,14 +17,16 @@ function Contents() {
       <div className=' h-full rounded-lg pt-5 p-4 font-bold '>
         <h2 className='py-14'>On this Page</h2>
 
-        <ul className='mt-2 cursor-pointer text-sm font-light text-gray-500 px-2 pt-4 pb-20  border-l-2 border-white/10 grid gap-1'>
+        <ul className=' cursor-pointer text-sm font-light text-gray-500 px-2  border-l-2 border-white/10 grid gap-1'>
           {
             listContents.map((content , index) => (
 
               <ContentButton key={content.id} scrollBtn={() => scrollBtn(content.id)} content={content.contents} />
             ))
-          } 
+          }
         </ul>
+        <h2 className='text-lg py-10 font-normal'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla doloremque vel adipisci earum fugiat, laudantium illum totam facilis fuga.</h2>
+
       </div>
     </div>
   )
