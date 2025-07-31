@@ -10,16 +10,6 @@ const navLinks = [
   },{
     id:2,
     page: "Projects"
-  },{
-    id:3,
-    page: "Portfolio"
-  },{
-    id:4,
-    page: "Contact"
-  }
-  ,{
-    id:5,
-    page: "Nigga"
   }
 ]
 

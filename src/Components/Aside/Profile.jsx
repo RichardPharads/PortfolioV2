@@ -14,7 +14,7 @@ const lists = [
    {
     id: 2,
     header: "Awards & Certificates",
-    items: ["UI/UX", "Backend" , "Frontend" , "API", "Machine Learning" , "Training Model" , "Web Design" , "Fullstack"  ]
+    items: ["Basic React coursera", "Advanced React Coursera" , "Responsive Website FreeCodeCamp" , "Appcon Participation", "BPI Participation" ,  ]
   },
 ]
 
@@ -41,7 +41,7 @@ function Profile() {
               </div>
               <h3 className='text-sm text-white/80'>Full stack Dev</h3>
             </div>
-            <button className='text-[15px] border min-w-[200px] min-h-[32px] rounded-[10px] text-white'>Follow</button>
+            <button onClick={() => window.open('https://github.com/RichardPharads', '_blank')} className='text-[15px] border min-w-[200px] min-h-[32px] rounded-[10px] text-white hover:bg-white/10 duration-500'>Follow</button>
           </div>
 
           <div className='flex text-sm font-light gap-2'>
@@ -65,7 +65,7 @@ function Profile() {
       
             { 
               items.map((item , index) => (
-                <ul key={index} className="text-sm inline text-white/80 hover:text-white cursor-crosshair">{item} | </ul>
+                <ul key={index} className="text-sm inline text-white/80 hover:text-white duration-500 cursor-crosshair">{item} | </ul>
               ))
             }
            </div>

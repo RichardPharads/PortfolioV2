@@ -10,6 +10,8 @@ const pageReducer = (state , action ) =>{
       return {page:0}
     case "about":
       return {page:1}
+    case "projects":
+      return {page:2}
 
     default:
       return state
