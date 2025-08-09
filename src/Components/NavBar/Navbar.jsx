@@ -22,7 +22,7 @@ function Navbar() {
   const {isToggle , toggleBtn } = ButtonToggle(true)
   return (
     <div className=''>
-    <div  className={`h-full  bg-black/60 backdrop-blur-sm right-0 drop-shadow-2xl duration-700 top-0 ${isToggle ? " w-[400px]" : "w-[200px] opacity-0"}  absolute z-50 min-sm:hidden ` }>
+    <div  className={`h-full  bg-black/60 backdrop-blur-sm right-0 drop-shadow-2xl duration-700 top-0 ${isToggle ? " w-9/12" : "w-[200px] opacity-0"}  absolute z-50 min-sm:hidden ` }>
     <h2 className='text-2xl py-10 px-4'>Navigation</h2>
     <ul className='flex flex-col'>
       {
