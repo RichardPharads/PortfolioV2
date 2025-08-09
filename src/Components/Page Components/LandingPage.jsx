@@ -26,7 +26,7 @@ function LandingPage() {
     const resumeUrl = '/resume.pdf' // You'll need to add your resume file to the public folder
     const link = document.createElement('a')
     link.href = resumeUrl
-    link.download = 'Richard_Pharads_Resume.pdf'
+    link.download = 'RichardParado_Resume.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -34,13 +34,13 @@ function LandingPage() {
 
   return (
     <div className='flex justify-center items-center'>
-        <div className='text-center p-5 gap-10 grid '>
+        <div className='text-center p-3 md:p-5 gap-6 md:gap-10 grid'>
           <div className='grid gap-4'>
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className='text-5xl font-bold text-white'
+              className='text-3xl md:text-4xl lg:text-5xl font-bold text-white'
             >
               {text}
               <span className="animate-pulse">|</span>
@@ -49,7 +49,7 @@ function LandingPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className='text-3xl text-white/60'
+              className='text-xl md:text-2xl lg:text-3xl text-white/60'
             >
               FullStack Developer
             </motion.h2>
@@ -59,7 +59,7 @@ function LandingPage() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className='*:w-[50px] *:h-[50px] flex justify-center gap-4'
+            className='*:w-[40px] *:h-[40px] md:*:w-[50px] md:*:h-[50px] flex justify-center gap-3 md:gap-4'
           >
             <img className='spinner' src={react} alt="React" />
             <img src={javascript} alt="JavaScript" />
@@ -70,7 +70,7 @@ function LandingPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.5 }}
-            className='flex flex-col sm:flex-row gap-4 justify-center items-center'
+            className='flex flex-col gap-3 md:flex-row md:gap-4 justify-center items-center'
           >
             <div className='border rounded-xl w-fit py-2 px-8 border-accent hover:bg-white/10 cursor-pointer duration-500 transition-all hover:scale-105'>
               Get in Touch

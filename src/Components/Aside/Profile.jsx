@@ -4,7 +4,7 @@ import verify from '../../Assets/verify.png'
 import github from '../../Assets/github 1.png'
 import twitter from '../../Assets/twitter.png'
 import facebook from '../../Assets/facebook.png'
-import instagram from '../../Assets/instagram.png'
+import linkedin from '../../Assets/linkedin.png'
 const lists = [
 
   { id: 1,
@@ -73,12 +73,16 @@ function Profile() {
           ))
         }
 
-        <div className='gap-2  flex'>
+        <div className='gap-2 *:cursor-pointer flex'>
           <div className='w-6 h-6 cursor-pointer '>
+            <a href="https://www.facebook.com/pharadss">
             <img className='w-full h-full' src={facebook} alt="" />
+            </a>
           </div>
           <div className='w-6 h-6 cursor-pointer'>
-            <img className='w-full h-full' src={instagram} alt="" />
+            <a href="https://www.linkedin.com/in/richard-parado-143502274/">
+             <img className='w-full h-full' src={linkedin} alt="" />
+            </a>
           </div>
         </div>
       </div>

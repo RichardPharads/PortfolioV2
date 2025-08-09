@@ -9,33 +9,38 @@ import CursorBall from './Components/Page Components/CursorBall'
 function App() {
 
   return (
-    <div className='flex h-lvh m-auto px-18'>
+    <div className='flex h-lvh m-auto px-4 md:px-8 lg:px-18'>
         <CursorBall/>
+        
+        {/* Profile - Hidden on mobile, visible on desktop */}
         <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <Profile/>
-    </motion.div>
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="hidden lg:block"
+        >
+          <Profile/>
+        </motion.div>
 
       <SectionProvider>
-  <div className='flex flex-col w-full h-full p-4  py-4'>
-        <Navbar  />
-    <div className='flex flex-1 overflow-hidden'>
-      
-        <Main/>
+        <div className='flex flex-col w-full h-lvh p-2 md:p-4 py-4 '>
+          <Navbar  />
+          <div className='flex flex-1 overflow-hidden'>
+            <Main/>
+            
+            {/* Contents - Hidden on mobile, visible on desktop */}
             <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
-    >
-        <Contents/>
-        </motion.div>
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="hidden lg:block"
+            >
+              <Contents/>
+            </motion.div>
+          </div>
+        </div>
+      </SectionProvider>
     </div>
-  </div>
-  </SectionProvider>
-</div>
   )
 }
 export default App
