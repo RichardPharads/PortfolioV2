@@ -23,7 +23,7 @@ function App() {
         </motion.div>
 
       <SectionProvider>
-        <div className='flex flex-col w-full h-full p-2 md:p-4 py-4 '>
+        <div className='flex flex-col w-full h-full p-2 md:p-4 py-4 relative '>
           <Navbar  />
           <div className='flex flex-1 overflow-hidden'>
             <Main/>

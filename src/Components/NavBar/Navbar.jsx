@@ -34,13 +34,13 @@ function Navbar() {
     </div>
 
     
-    <div className='h-30  relative flex items-center '>
+    <div className='h-20 max-sm:h-0 relative flex items-center '>
 
 
       <div className='blur-3xl z-40 bg-black w-full h-full absolute'></div>
       
 
-      <div className='w-10 h-10  absolute right-0 z-50 text-white text-4xl' onClick={toggleBtn} >
+      <div className='w-10 h-10 top-5  absolute right-0 z-50 text-white text-4xl' onClick={toggleBtn} >
 
         <img className='w-full h-auto' src={`${isToggle ? close : open}`} alt="" />
       </div>
@@ -50,7 +50,7 @@ function Navbar() {
 
 
 
-      <div className='rounded-md text-center z-50 w-full h-[92px] items-center flex justify-between bg-bg-dark-800 px-16 max-sm:hidden'>
+      <div className='rounded-md text-center z-50 w-full h-[92px]  items-center flex justify-between bg-bg-dark-800 px-16 max-sm:hidden'>
         <div className=' pr-40'>Logo</div>
         <div className=' flex-1'>
           <ul className='flex gap-4'>
