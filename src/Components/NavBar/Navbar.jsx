@@ -2,6 +2,7 @@ import { useSection } from '../../Context/SectionContext'
 import ButtonToggle from '../../Hooks/ButtonToggle'
 import close from '../../Assets/eye.png'
 import open from '../../Assets/menu.png'
+import userProfile from '../../Assets/profile.jpg'
 const navLinks = [
   {
     id: 0,
@@ -22,7 +23,7 @@ function Navbar() {
   const {isToggle , toggleBtn } = ButtonToggle(true)
   return (
     <div className=''>
-    <div  className={`h-full  bg-black/60 backdrop-blur-sm right-0 drop-shadow-2xl duration-700 top-0 ${isToggle ? " w-9/12" : "w-[200px] opacity-0"}  absolute z-50 min-sm:hidden ` }>
+    <div  className={`h-full bg-black/60 backdrop-blur-sm right-0 drop-shadow-2xl duration-700 top-0 ${isToggle ? " w-9/12" : "w-[200px] opacity-0"}  absolute z-50 min-sm:hidden ` }>
     <h2 className='text-2xl py-10 px-4'>Navigation</h2>
     <ul className='flex flex-col'>
       {
@@ -31,6 +32,18 @@ function Navbar() {
           ))
         }
     </ul>
+    <div className='absolute bottom-10 w-full'>
+      <div className='flex justify-between items-end flex-wrap px-10 gap-2' >
+      <div className="button flex gap-2 items-end flex-wrap">
+        <button className='border border-white py-1 w-[120px] rounded-2xl hover:bg-white/10 duration-500'>Github</button>
+        <button className='border border-white py-1 w-[120px] rounded-2xl hover:bg-white/10 duration-500'>Github</button>
+      </div>
+      <div className=''>
+        <div className={`w-14 h-14 rounded-full border-accent border-2 bg-cover bg-[${userProfile}]`}></div>
+      </div>
+      </div>
+    </div>
+
     </div>
 
     
