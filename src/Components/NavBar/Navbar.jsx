@@ -37,22 +37,34 @@ function Navbar() {
           ))
         }
     </ul>
-    <div className='absolute bottom-10 w-full'>
-      <div className='flex justify-between items-end px-4 gap-2' >
-      <div className="button flex flex-col gap-5 items-end flex-wrap justify-center">
-        <div onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)}  className='w-6 h-6 relative'>
+    <div className='absolute bottom-5 w-full'>
+      <div className='flex justify-between items-end px-4 gap-2 ' >
+      <div className="button flex flex-col gap-2 items-end flex-wrap justify-center">
+        <div className='relative'>
           {
             isBtnHover && <div className='absolute left-12/12 bottom-4 bg-neutral-950 rounded-sm border border-neutral-500'>
                     <div className='p-2 text-sm font-light'>RichardPharads</div>
                   </div>
           }
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} class="devicon-github-original text-3xl "></i>
+
         </div>
-       
+        <div className='relative'>
+          {
+            isBtnHover && <div className='absolute left-12/12 bottom-4 bg-neutral-950 rounded-sm border border-neutral-500 '>
+                    <div className='p-2 text-sm font-light'>RichardPharads</div>
+                  </div>
+          }
+          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} class="devicon-linkedin-plain text-3xl "></i>
+
+        </div>
+     
+
      
       </div>
-      <div className=''>
+      <div className='flex flex-col items-center gap-2 ' onClick={() => alert("hello")}>
         <div className={`w-14 h-14 rounded-full border-accent border-2 bg-cover bg-[${userProfile}]`}></div>
+        <h4 className='text-center text-neutral-600 text-sm border px-2 py-1.5 rounded-2xl'>View Profile</h4>
       </div>
       </div>
     </div>
