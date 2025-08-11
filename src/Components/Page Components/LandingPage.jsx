@@ -8,7 +8,6 @@ function LandingPage() {
   const [text, setText] = useState('')
   const fullText = "Welcome to my portfolio"
   const [currentIndex, setCurrentIndex] = useState(0)
-  console.log(fullText.slice(0,2))
   // Typing animation effect
   useEffect(() => {
     if (currentIndex < fullText.length) {
