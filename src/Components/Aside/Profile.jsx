@@ -24,7 +24,7 @@ const lists = [
 function Profile() {
   return (
     
-    <div className={`center border-x  h-full border-gray-600 w-[300px] border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
+    <div className={`center border-x  h-full border-gray-600 w-[300px] max-sm:w-full max-sm:bg-none max-sm:border-none border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
       <div className=' flex flex-col gap-8 p-6 pt-16'>
         <div className=' h-fit flex flex-col items-center text-center gap-6'>
           <div className='profile w-[100px] h-[100px] rounded-full '>

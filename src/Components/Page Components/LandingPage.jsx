@@ -31,8 +31,9 @@ function LandingPage() {
     document.body.removeChild(link)
   }
 
+
   return (
-    <div className='flex justify-center items-center'>
+    <div className='pt-20 flex justify-center items-center'>
         <div className='text-center p-3 md:p-5 gap-6 md:gap-10 grid'>
           <div className='grid gap-4'>
             <motion.h1 

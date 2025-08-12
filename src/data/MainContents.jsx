@@ -3,6 +3,7 @@ import Skills from "../Components/Page Components/Skills"
 import Value from "../Components/Page Components/Value"
 import Testimonials from "../Components/Page Components/Testimonials"
 import Projects from "../Components/Page Components/Projects"
+import Profile from "../Components/Aside/Profile"
 export const listContents = [
   [
      {
@@ -44,5 +45,12 @@ export const listContents = [
     contents: "My Portfolio Projects",
     components: () => <Projects/>
   }
+  ],[
+    {
+      id:1,
+      title: "Profile",
+      contents: "My Profile",
+      components: () => <Profile/>
+    }
   ]
 ]

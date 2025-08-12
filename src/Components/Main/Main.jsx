@@ -22,9 +22,7 @@ function Main() {
                   ref={(el) => (sectionRef[items.id] = { current: el })}
                   className="min-h-lvh w-full z-0 "
                 >
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl border-accent border-2 w-fit p-2">
-                    {items.id}
-                  </h1>
+                  
                   {items.components && <items.components/>}
                 </div>
               </motion.div>

@@ -12,6 +12,8 @@ const pageReducer = (state , action ) =>{
       return {page:1}
     case "projects":
       return {page:2}
+    case "profile":
+      return {page:3}
 
     default:
       return state

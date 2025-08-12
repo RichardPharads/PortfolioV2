@@ -46,7 +46,7 @@ function Navbar() {
                     <div className='p-2 text-sm font-light'>RichardPharads</div>
                   </div>
           }
-          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} class="devicon-github-original text-3xl "></i>
+          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} className="devicon-github-original text-3xl "></i>
 
         </div>
         <div className='relative'>
@@ -55,14 +55,14 @@ function Navbar() {
                     <div className='p-2 text-sm font-light'>RichardPharads</div>
                   </div>
           }
-          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} class="devicon-linkedin-plain text-3xl "></i>
+          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} className="devicon-linkedin-plain text-3xl "></i>
 
         </div>
      
 
      
       </div>
-      <div className='flex flex-col items-center gap-2 ' onClick={() => alert("hello")}>
+      <div className='flex flex-col items-center gap-2 ' onClick={() => dispatch({type:"profile"})} key="21">
         <div className={`w-14 h-14 rounded-full border-accent border-2 bg-cover bg-[${userProfile}]`}></div>
         <h4 className='text-center text-neutral-600 text-sm border px-2 py-1.5 rounded-2xl'>View Profile</h4>
       </div>

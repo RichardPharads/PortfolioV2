@@ -1,4 +1,5 @@
 import React, {createContext, useContext, useRef, useState} from 'react'
+import {BrowserRouter , Routes , Route  , Link, Router } from 'react-router-dom'
 import Profile from './Components/Aside/Profile'
 import Navbar from './Components/NavBar/Navbar'
 import Main from './Components/Main/Main'
@@ -9,6 +10,7 @@ import CursorBall from './Components/Page Components/CursorBall'
 function App() {
 
   return (
+      <BrowserRouter>
     <div className='flex h-lvh m-auto px-4 md:px-8 lg:px-18'>
         <CursorBall/>
         
@@ -41,6 +43,9 @@ function App() {
         </div>
       </SectionProvider>
     </div>
+   
+    </BrowserRouter>
+ 
   )
 }
 export default App
