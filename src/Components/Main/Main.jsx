@@ -7,7 +7,7 @@ function Main() {
 
   return (
     <div className="flex-1 z-0 scroll-auto md:p-4">
-      <div className="h-full p-5 w-full">
+      <div className="h-full w-full">
         <div className="h-full flex flex-col">
           <div className="overflow-y-auto flex-1 scrollbar-hidden pb-10">
             {listContents ? listContents.map((items) => {
