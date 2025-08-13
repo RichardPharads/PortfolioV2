@@ -5,6 +5,7 @@ import github from '../../Assets/github 1.png'
 import twitter from '../../Assets/twitter.png'
 import facebook from '../../Assets/facebook.png'
 import linkedin from '../../Assets/linkedin.png'
+import useMediaQuery from '../../Hooks/useMediaQuery'
 const lists = [
 
   { id: 1,
@@ -22,9 +23,10 @@ const lists = [
 
   
 function Profile() {
+  const isMobile = useMediaQuery({media: "(max-width-764px)"})
   return (
     
-    <div className={`center border-x  h-full border-gray-600 w-[300px] max-sm:w-full max-sm:bg-none max-sm:border-none border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
+    <div className={`center border-x h-full border-gray-600 w-[300px] max-sm:w-full max-sm:bg-none max-sm:border-none border-t-0 bg-linear-to-t from-[#0C0C0C] from-0% to-[#141414] to-100% `}>
       <div className=' flex flex-col gap-8 p-6 pt-16'>
         <div className=' h-fit flex flex-col items-center text-center gap-6'>
           <div className='profile w-[100px] h-[100px] rounded-full '>

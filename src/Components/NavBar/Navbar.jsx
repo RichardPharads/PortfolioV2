@@ -6,6 +6,8 @@ import github from '../../Assets/github 1.png'
 import linkedin from '../../Assets/linkedin.png'
 import userProfile from '../../Assets/profile.jpg'
 import { useState } from 'react'
+import UserProfile from './UserProfile'
+import ToggleIcons from './ToggleIcons'
 const navLinks = [
   {
     id: 0,
@@ -38,34 +40,15 @@ function Navbar() {
         }
     </ul>
     <div className='absolute bottom-5 w-full'>
-      <div className='flex justify-between items-end px-4 gap-2 ' >
+      <div className='flex justify-between items-end p-5 gap-2 ' >
       <div className="button flex flex-col gap-2 items-end flex-wrap justify-center">
-        <div className='relative'>
-          {
-            isBtnHover && <div className='absolute left-12/12 bottom-4 bg-neutral-950 rounded-sm border border-neutral-500'>
-                    <div className='p-2 text-sm font-light'>RichardPharads</div>
-                  </div>
-          }
-          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} className="devicon-github-original text-3xl "></i>
-
-        </div>
-        <div className='relative'>
-          {
-            isBtnHover && <div className='absolute left-12/12 bottom-4 bg-neutral-950 rounded-sm border border-neutral-500 '>
-                    <div className='p-2 text-sm font-light'>RichardPharads</div>
-                  </div>
-          }
-          <i onMouseLeave={() => setIsBtnHover(false)} onMouseEnter={() => setIsBtnHover(true)} className="devicon-linkedin-plain text-3xl "></i>
-
-        </div>
+        <ToggleIcons/>
+       
      
 
      
       </div>
-      <div className='flex flex-col items-center gap-2 ' onClick={() => dispatch({type:"profile"})} key="21">
-        <div className={`w-14 h-14 rounded-full border-accent border-2 bg-cover bg-[${userProfile}]`}></div>
-        <h4 className='text-center text-neutral-600 text-sm border px-2 py-1.5 rounded-2xl'>View Profile</h4>
-      </div>
+          <UserProfile/>
       </div>
     </div>
 
@@ -98,6 +81,9 @@ function Navbar() {
             ))
           }
           </ul>
+        </div>
+        <div>
+         <UserProfile/>
         </div>
       </div>
     </div>

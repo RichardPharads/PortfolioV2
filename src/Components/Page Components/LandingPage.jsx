@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import react from '../../Assets/atom.png'
 import javascript from '../../Assets/javascript.png'
 import html from '../../Assets/html.png'
+import useMediaQuery from '../../Hooks/useMediaQuery'
 
 function LandingPage() {
   const [text, setText] = useState('')
@@ -30,7 +31,7 @@ function LandingPage() {
     link.click()
     document.body.removeChild(link)
   }
-
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   return (
     <div className='pt-20 flex justify-center items-center'>
@@ -51,7 +52,9 @@ function LandingPage() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className='text-xl md:text-2xl lg:text-3xl text-white/60'
             >
-              FullStack Developer
+              {
+                isMobile ? "Fullstack Developer " : "Kang Kong chips"
+              }
             </motion.h2>
           </div>
           

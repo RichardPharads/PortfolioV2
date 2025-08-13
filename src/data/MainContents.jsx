@@ -35,7 +35,7 @@ export const listContents = [
     id: 3,
     title: "Testimonials",
     contents: "Testimonials",
-    components: () => <Testimonials/>
+    components: () => <Testimonials/>,
 
   },
   ], [
@@ -43,14 +43,14 @@ export const listContents = [
     id: 1,
     title: "Projects",
     contents: "My Portfolio Projects",
-    components: () => <Projects/>
+    components: () => <Projects/>,
   }
   ],[
     {
       id:1,
       title: "Profile",
       contents: "My Profile",
-      components: () => <Profile/>
+      
     }
   ]
 ]
