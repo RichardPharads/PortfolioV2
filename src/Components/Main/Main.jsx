@@ -9,7 +9,7 @@ function Main() {
     <div className="flex-1 z-0 scroll-auto md:p-4">
       <div className="h-full w-full">
         <div className="h-full flex flex-col">
-          <div className="overflow-y-auto flex-1 scrollbar-hidden pb-10">
+          <div className="overflow-y-auto flex-1 scrollbar-hidden pb-10 py-20">
             {listContents ? listContents.map((items) => {
               // ❌ Hide Profile if not mobile
 
