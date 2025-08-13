@@ -48,7 +48,37 @@ function Projects() {
   return (
     <div>
       <h2>This is Project Page</h2>
-      <h2>Tinatamad pa</h2>
+      <div className=' w-full h-auto relative'>
+        
+        <div className='featured w-full h-fit p-4'>
+            <h2 className='py-5 text-neutral-500'>Featured</h2>
+            <div className='flex flex-wrap gap-5'>
+              <div className='image min-full max-w-[600px] w-[400px] aspect-video  border border-accent'></div>
+              <article className='w-70'>
+                <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
+                <p className='text-sm font-light text-gray-300 py-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
+              </article>
+            </div>
+        </div>
+        <div className=' p-3 '>
+          <h2 className='py-5 text-neutral-500'>Recent</h2>
+          <div className='card-container  h-fit gap-2 flex flex-wrap'>
+            <div className='card max-w-[430px] w-full aspect-video bg-accent/10 hover:border-accent  flex items-end'>
+              <div className='p-5 flex flex-col'>
+                <h4 className='text-3xl'>Artificial Intelligence</h4>
+                <p className='text-sm font-light text-neutral-600 w-10/12'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, incidunt.</p>
+              </div>
+            </div>
+            <div className='card max-w-[200px] min-w-[210px] aspect-video bg-neutral-800/20'></div>
+            <div className='card w-[210px] aspect-video bg-neutral-800/20'></div>
+            <span className='py-5'>
+                          <h2 className='text-5xl text-center'>PROJECTS</h2>
+
+            </span>
+        </div>
+      </div>
+      </div>
+
     </div>
   )
   

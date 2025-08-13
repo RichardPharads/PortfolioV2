@@ -1,20 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useSection } from "../../Context/SectionContext.jsx";
-import useMediaQuery from "../../Hooks/useMediaQuery.jsx";
 
 function Main() {
   const { sectionRef, listContents } = useSection();
-  const isMobile = useMediaQuery({ query: "(max-width: 762px)" });
 
   return (
     <div className="flex-1 z-0 scroll-auto md:p-4">
-      <div className="h-full p-10 w-full">
+      <div className="h-full p-5 w-full">
         <div className="h-full flex flex-col">
           <div className="overflow-y-auto flex-1 scrollbar-hidden pb-10">
             {listContents ? listContents.map((items) => {
               // ❌ Hide Profile if not mobile
-              if (items.id === "Profile" && !isMobile) return null;
 
               return (
                 <motion.div
