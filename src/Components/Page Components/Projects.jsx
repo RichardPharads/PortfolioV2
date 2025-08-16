@@ -47,13 +47,13 @@ function Projects() {
 
   return (
     <div>
-      <div className=' w-full h-auto relative'>
+      <div className=' w-full h-auto '>
         
         <div className='featured w-full h-fit'>
             <h2 className='py-5 text-neutral-500'>Featured</h2>
-            <div className='flex flex-wrap gap-5'>
-              <div className='image w-full sm:w-full md:w-[700px] aspect-video  border border-accent'></div>
-              <article className='max-w-[500px]'>
+            <div className='flex flex-wrap border '>
+              <div className='image w-full lg:w-[700px] aspect-video border border-accent'></div>
+              <article className=''>
                 <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
                 <p className='text-sm font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
                 <div className='icons flex gap-2'>
@@ -69,8 +69,8 @@ function Projects() {
           <h2 className='py-5 text-neutral-500'>Recent</h2>
           <div className='card-container  h-fit gap-2 flex flex-wrap'>
          
-            <div className='card w-[400px] aspect-video bg-neutral-800/20'></div>
-            <div className='card w-[400px] aspect-video bg-neutral-800/20'></div>
+            <div className='card w-full sm:w-[400px] aspect-video bg-neutral-800/20'></div>
+            <div className='card w-full sm:w-[400px] aspect-video bg-neutral-800/20'></div>
             <span className='py-5'>
             </span>
         </div>
