@@ -2,8 +2,11 @@ import LandingPage from "../Components/Page Components/LandingPage"
 import Skills from "../Components/Page Components/Skills"
 import Value from "../Components/Page Components/Value"
 import Testimonials from "../Components/Page Components/Testimonials"
-import Projects from "../Components/Page Components/Projects"
+import Projects from "../Components/Page Components/Project Components/Projects"
 import Profile from "../Components/Aside/Profile"
+import RecentProject from '../Components/Page Components/Project Components/RecentProject'
+import OtherProject from '../Components/Page Components/Project Components/OtherProject'
+
 export const listContents = [
   [
      {
@@ -36,14 +39,25 @@ export const listContents = [
     title: "Testimonials",
     contents: "Testimonials",
     components: () => <Testimonials/>,
-
   },
-  ], [
+  ],[
   {
     id: 1,
     title: "Projects",
-    contents: "My Portfolio Projects",
+    contents: "Featured Project",
     components: () => <Projects/>,
+  },
+    {
+    id: 2,
+    title: "Recent",
+    contents: "Recent Projects",
+    components: () => <RecentProject/>
+  },
+   {
+    id: 3,
+    title: "Other",
+    contents: "Other Projects",
+    components: () => <OtherProject/>,
   }
   ],[
     {

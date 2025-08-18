@@ -1,8 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
-function Projects() {
-  const projects = [
+import ProjectCard from './ProjectCard'
+export const projects = [
     {
       id: 1,
       title: "E-Commerce Platform",
@@ -44,18 +43,18 @@ function Projects() {
       featured: true
     }
   ]
-
+function Projects() {
+  
+  const filtered = projects.filter(project => project.featured)
   return (
-    <div>
-      <div className=' w-full h-auto '>
-        
-        <div className='featured w-full h-fit'>
-            <h2 className='py-5 text-neutral-500'>Featured</h2>
-            <div className='flex flex-wrap border '>
+        <div className='w-full h-full'>
+        <div className='featured w-full'>
+            <h2 className='text-neutral-500'>Featured</h2>
+            <div className='flex flex-wrap  '>
               <div className='image w-full lg:w-[700px] aspect-video border border-accent'></div>
-              <article className=''>
+              <article className='md:w-[400px]'>
                 <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
-                <p className='text-sm font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
+                <p className=' font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
                 <div className='icons flex gap-2'>
                   <div className='w-8 h-8 bg-red-600'></div>
                   <div className='w-8 h-8 bg-red-600'></div>
@@ -65,19 +64,8 @@ function Projects() {
               </article>
             </div>
         </div>
-        <div className=' p-3 '>
-          <h2 className='py-5 text-neutral-500'>Recent</h2>
-          <div className='card-container  h-fit gap-2 flex flex-wrap'>
-         
-            <div className='card w-full sm:w-[400px] aspect-video bg-neutral-800/20'></div>
-            <div className='card w-full sm:w-[400px] aspect-video bg-neutral-800/20'></div>
-            <span className='py-5'>
-            </span>
-        </div>
-      </div>
       </div>
 
-    </div>
   )
   
 }
