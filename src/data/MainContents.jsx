@@ -44,19 +44,19 @@ export const listContents = [
   {
     id: 1,
     title: "Projects",
-    contents: "Featured Project",
+    contents: "Featured ",
     components: () => <Projects/>,
   },
     {
     id: 2,
     title: "Recent",
-    contents: "Recent Projects",
+    contents: "Recent ",
     components: () => <RecentProject/>
   },
    {
     id: 3,
     title: "Other",
-    contents: "Other Projects",
+    contents: "Other ",
     components: () => <OtherProject/>,
   }
   ],[

@@ -45,21 +45,20 @@ export const projects = [
   ]
 function Projects() {
   
-  const filtered = projects.filter(project => project.featured)
   return (
-        <div className='w-full h-full'>
+        <div className='w-full h-lvh pt-5'>
         <div className='featured w-full'>
-            <h2 className='text-neutral-500'>Featured</h2>
+                <h2 className='text-4xl text-white mb-2'>Featured <span className='text-accent'> Project</span></h2>
+
             <div className='flex flex-wrap  '>
               <div className='image w-full lg:w-[700px] aspect-video border border-accent'></div>
-              <article className='md:w-[400px]'>
+              <article className='md:w-[400px]  mt-5'>
                 <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
                 <p className=' font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
                 <div className='icons flex gap-2'>
                   <div className='w-8 h-8 bg-red-600'></div>
                   <div className='w-8 h-8 bg-red-600'></div>
                   <div className='w-8 h-8 bg-red-600'></div>
-
                 </div>
               </article>
             </div>
