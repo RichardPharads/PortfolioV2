@@ -8,7 +8,7 @@ function RecentProject() {
       <h2 className='text-4xl text-neutral-500'>Recent Project</h2>
         {
           projects.filter(featured => featured.featured).map((project,index) =>(
-          <ProjectCard key={index} id={project.id} image="something" title={project.title} text={project.description} tech={project.tech}/>
+          <ProjectCard key={index} id={project.id} image={project.image} title={project.title} text={project.description} tech={project.tech} live={project.live} github={project.github}/>
           
           ))
          }

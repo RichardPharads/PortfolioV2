@@ -1,7 +1,6 @@
 import LandingPage from "../Components/Page Components/LandingPage"
 import Skills from "../Components/Page Components/Skills"
 import Value from "../Components/Page Components/Value"
-import Testimonials from "../Components/Page Components/Testimonials"
 import Projects from "../Components/Page Components/Project Components/Projects"
 import Profile from "../Components/Aside/Profile"
 import RecentProject from '../Components/Page Components/Project Components/RecentProject'
@@ -33,12 +32,6 @@ export const listContents = [
     contents: "Skills and Tools",
     components: () => <Skills/>
 
-  },
-  {
-    id: 3,
-    title: "Testimonials",
-    contents: "Testimonials",
-    components: () => <Testimonials/>,
   },
   ],[
   {

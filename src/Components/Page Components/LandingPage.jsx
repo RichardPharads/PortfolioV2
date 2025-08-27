@@ -52,9 +52,7 @@ function LandingPage() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className='text-xl md:text-2xl lg:text-3xl text-white/60'
             >
-              {
-                isMobile ? "Fullstack Developer " : "Kang Kong chips"
-              }
+              <h2>Im a Fullstack Developer</h2>
             </motion.h2>
           </div>
           
