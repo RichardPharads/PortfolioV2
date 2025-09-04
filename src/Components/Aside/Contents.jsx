@@ -25,7 +25,6 @@ function Contents() {
             ))
           }
         </ul>
-        <h2 className='text-lg py-10 font-normal'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla doloremque vel adipisci earum fugiat, laudantium illum totam facilis fuga.</h2>
 
       </div>
     </div>

@@ -6,16 +6,19 @@ function ProjectCard({id , image, title , text , tech , live , github}) {
   return (
         <div className='card-container h-fit gap-4 flex my-4'>
             <div className='flex gap-5 flex-wrap'>
-              <div className='card w-full sm:max-w-[400px] sm:min-w-[450px] aspect-video bg-neutral-800/20 flex items-center justify-center overflow-hidden'>
+              <div className='bg-white h-fit'>
+              <div className='card w-full sm:max-w-[400px] sm:min-w-[450px] aspect-video bg-neutral-800/20 flex items-center justify-center overflow-hidden border hover:scale-90 duration-500'>
                 {image ? (
                   <img
                     src={image}
                     alt={title}
                     className="object-cover w-full h-full"
                   />
+                  
                 ) : (
                   <span className="text-neutral-400">No Image</span>
                 )}
+                </div>
               </div>
               <div className='flex gap-5 flex-col'>
                <h2 className='text-lg md:text-2xl'>{title}</h2>

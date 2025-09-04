@@ -5,6 +5,7 @@ import openWeatherImage from '../../../Assets/WeatherAPP.png'
 import portfolioImage from '../../../Assets/portfolioProject.png'
 import jobfinder from '../../../Assets/jobsearch.png'
 import pygmameImage from '../../../Assets/pygame.png'
+import featured from '../../../Assets/featured.png'
 export const projects = [
     {
       id: 1,
@@ -54,7 +55,9 @@ function Projects() {
                 <h2 className='text-4xl text-white mb-2'>Featured <span className='text-accent'> Project</span></h2>
 
             <div className='flex flex-wrap gap-10 '>
-              <div className='image w-full lg:w-[700px] aspect-video border border-accent'></div>
+              <div className='image w-full lg:w-[700px]  bg-white aspect-video'>
+                <img src={featured} alt="" className='h-full hover:scale-90 transition-transform duration-600' />
+              </div>
               <article className='md:w-[400px]'>
                 <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
                 <p className=' font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
