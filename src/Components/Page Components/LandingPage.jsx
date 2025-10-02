@@ -23,7 +23,7 @@ function LandingPage() {
   // Download resume function
   const handleDownloadResume = () => {
     // Replace this URL with your actual resume file
-    const resumeUrl = '/resume.pdf' // You'll need to add your resume file to the public folder
+    const resumeUrl = '/Richard_C_Parado Resume - 2025.pdf' // You'll need to add your resume file to the public folder
     const link = document.createElement('a')
     link.href = resumeUrl
     link.download = 'RichardParado_Resume.pdf'
