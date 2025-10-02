@@ -10,7 +10,7 @@ export const projects = [
     {
       id: 1,
       title: "Job Find",
-      description: "JobFinder is a responsive web application built with React and Tailwind CSS, designed to help users search and explore job listings in real time. It integrates with an external job API (e.g. RapidAPI JSearch) to fetch live data, offering keyword-based search, location filters, and detailed job views. The app features a clean UI, fast navigation, and modular components for scalability and ease of maintenance",
+      description: "JobFinder is a responsive React and Tailwind CSS web app that integrates with a job API to provide real-time listings with keyword search, location filters, and detailed job views. It offers a clean UI, fast navigation, and scalable modular components.",
       image: jobfinder,
       tech: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
       github: "https://github.com/RichardPharads/DevJobPH",
@@ -20,7 +20,7 @@ export const projects = [
     {
       id: 2,
       title: "Arcade Thesis",
-      description: "This project builds a modular arcade system using Python, combining Ultralytics YOLO for object detection, PySide6 for GUI, and Pygame for gameplay. It creates an interactive experience where players engage through visual input and real-time feedback. The system showcases how AI and game development can merge to deliver immersive entertainment",
+      description: "This project is a modular arcade system using Python with YOLO for object detection, PySide6 for GUI, and Pygame for gameplay, merging AI and game development for an interactive, real-time experience.",
       image: pygmameImage,
       tech: ["Pygame", "Pyside6", "Python"],
       github: "https://github.com/RichardPharads/ArcadeThesis",
@@ -58,14 +58,10 @@ function Projects() {
               <div className='image w-full lg:w-[700px]  bg-white aspect-video'>
                 <img src={featured} alt="" className='h-full hover:scale-90 transition-transform duration-600' />
               </div>
-              <article className='md:w-[400px]'>
-                <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores.</h2>
-                <p className=' font-light text-gray-300 py-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veritatis assumenda cupiditate pariatur fuga delectus dignissimos, porro expedita id similique.</p>
-                <div className='icons flex gap-2'>
-                  <div className='w-8 h-8 bg-red-600'></div>
-                  <div className='w-8 h-8 bg-red-600'></div>
-                  <div className='w-8 h-8 bg-red-600'></div>
-                </div>
+              <article className='md:w-[600px]'>
+                <h2 className='text-2xl'>Front Neo Dashboard</h2>
+                <p className=' font-light text-gray-300 py-3'> FrontNeo is an AI-powered platform with a smart dashboard designed to monitor and manage watts or electricity usage in real time. It provides users with clear visual analytics, predictive insights, and automated recommendations to optimize power consumption. With FrontNeo, individuals, businesses, or facilities can track electricity usage efficiently, identify patterns, and reduce energy costs while promoting sustainability. The dashboard is intuitive and adaptive, making energy management accessible to both technical and non-technical users.</p>
+
               </article>
             </div>
         </div>
